@@ -12,7 +12,7 @@ model4 <- lm(
   Sepal.Length ~ Species * Sepal.Width,
   data = iris)
 model5 <- lm(
-  Sepal.Length ~ Sepal.Width + Petal.Length + Petal.Width + Species,
+  Sepal.Length ~ Species * Sepal.Width + Petal.Length + Petal.Width,
   data = iris)
 summary(model)
 summary(model2)
