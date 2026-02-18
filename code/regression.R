@@ -8,10 +8,6 @@ model2 <- lm(
 model3 <- lm(
   Petal.Length ~ Sepal.Length + Sepal.Width,
   data = iris)
-model5 <- lm(
-  Petal.Length ~ Sepal.Width + Sepal.Length + Sepal.Width + as.factor(Species),
-  data = iris)
 summary(model)
 summary(model2)
 summary(model3)
-summary(model5)
